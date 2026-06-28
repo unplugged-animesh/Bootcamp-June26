@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Edit Category</title>
+</head>
+<body>
+	 <div class="my-box">
+		<div class ="back">
+			<a href ="{{url_for("admin_dashboard",curr_login_id=curr_login_id)}}" class="back">Dashboard</a>
+		</div>	
+        <h1>Edit Categroy</h1>
+        <div class="west">
+        </div>
+        <form method="POST">
+            <div>
+                <label for="name"> Category Name:</label>
+                <input type="text" id="name" name="name" value="{{category.name}}" required>
+            </div>
+			<div>
+                <input type="submit" value="Save Changes">
+            </div>
+		</form>
+</body>
+</html>
